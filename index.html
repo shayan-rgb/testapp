@@ -7,7 +7,6 @@
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebaseui/9.10.1/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebaseui/9.10.1/firebase-ui-auth.css" />
   </head>
   <body>
     <div id="firebaseui-auth-container"></div>
@@ -41,13 +40,7 @@
       });
 
       // Start the FirebaseUI sign-in flow.
-      ui.start("#firebaseui-auth-container", {
-        signInOptions: [
-          firebase.auth.EmailAuthProvider.PROVIDER_ID,
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        ],
-      });
+      ui.start("#firebaseui-auth-container");
     </script>
   </body>
 </html>
