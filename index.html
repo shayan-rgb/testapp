@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>My Basic HTML Page</title>
-</head>
-<body>
-    <h1>This is my basic HTML page!</h1>
-    <p>This is a paragraph.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.1466.0/aws-sdk.min.js" integrity="sha512-YD8vSzLOzWFquvLE9ev9zMI+8S06OcZVLLQt53s/RZrpbtvhfJTqJ185IbcfhpOKFvXh1oj4AfdohiNLjQc8Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/amazon-cognito-identity-js/5.1.3/amazon-cognito-identity.min.js"></script>
+  </head>
+  <body>
+    <h2>Sign Up</h2>
+    <input type="text" id="signUpUsername" placeholder="Username" />
+    <input type="password" id="signUpPassword" placeholder="Password" />
+    <input type="email" id="signUpEmail" placeholder="Email" />
+    <button onclick="signUp()">Sign Up</button>
+
+    <h2>Sign In</h2>
+    <input type="text" id="signInUsername" placeholder="Username" />
+    <input type="password" id="signInPassword" placeholder="Password" />
+    <button onclick="signIn()">Sign In</button>
+
+    <script src="auth.js"></script>
+  </body>
 </html>
