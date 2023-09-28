@@ -1,3 +1,7 @@
+const AmazonCognitoIdentity = require('amazon-cognito-identity-js');
+
+// The rest of your code...
+
 AWSCognito.config.region = "eu-west-1"; // e.g. us-east-1
 
 let poolData = {
