@@ -9,7 +9,7 @@ let poolData = {
   ClientId: "13aqvue1rfc160vrjbreg2aa6c",
 };
 let userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
-
+console.log(userPool)
 function signIn() {
   let username = document.getElementById("signInUsername").value;
   let password = document.getElementById("signInPassword").value;
